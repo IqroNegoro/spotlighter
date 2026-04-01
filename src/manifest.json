@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "Spotlighter",
+    "version": "1.0.0",
+    "description": "Auto-screenshot element with spotlight and dim others areas that you want to spot",
+    "action": {
+        "default_title": "Spotlighter"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": ["tabs", "activeTab", "scripting", "downloads"]
+}
