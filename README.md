@@ -16,11 +16,21 @@ Perfect for:
 
 ---
 
+## Features
+
+- Real-time element highlighting as you hover
+- Adjustable dim opacity (0–100%) via the popup slider
+- Adjustable spotlight padding (0–160px) — controls how much space surrounds the highlighted element
+- Screenshots are saved as PNG with a readable filename: `spotlighter-YYYY-MM-DD_HH-MM-SS-domain-com.png`
+- Toggle spotlight on/off without losing your settings
+
+---
+
 ## Installation
 
 Since this extension isn't on the Chrome Web Store yet, you can load it manually:
 
-1. Clone or download this repository
+1. Download or clone this repository
    ```bash
    git clone https://github.com/IqroNegoro/spotlighter.git
    ```
@@ -29,7 +39,7 @@ Since this extension isn't on the Chrome Web Store yet, you can load it manually
 
 3. Enable "Developer mode" (toggle in the top right)
 
-4. Click "Load unpacked" and select the project folder
+4. Click "Load unpacked" and select the project folder `src`
 
 5. The Spotlighter icon will appear in your toolbar
 
@@ -39,9 +49,11 @@ Since this extension isn't on the Chrome Web Store yet, you can load it manually
 
 1. Navigate to any webpage
 2. Click the **Spotlighter** icon in the Chrome toolbar
-3. Move your cursor over elements — they'll be spotlighted as you hover
-4. Click any element to capture and download the screenshot
-5. Click the icon again to deactivate spotlight mode
+3. Click **Start Spotlight** in the popup
+4. Move your cursor over elements — they'll be spotlighted as you hover
+5. Adjust opacity and padding sliders in real-time to your liking
+6. Click any element to capture and download the screenshot
+7. Click **Cancel Spotlight** or click the button again to deactivate
 
 ---
 

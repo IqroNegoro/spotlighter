@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./popup.css">
+    <title>Spotlighter Panel</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div>
+                <h1>Spotlighter</h1>
+                <p>Take screenshot with spotlight element effortlessly.</p>
+            </div>
+            <button id="button">
+                Start Spotlight
+            </button>
+        </div>
+        <hr>
+        <div class="options">
+            <span>Options</span>
+            <div class="options-slider">
+                <div>
+                    <span>0</span>
+                    <input id="opacity-slider" type="range" min="0" max="100" step="1" value="80">
+                    <span>100</span>
+                </div>
+                <span>Dim Opacity:  <span id="opacity-text"></span></span>
+            </div>
+            <div class="options-slider">
+                <div>
+                    <span>0</span>
+                    <input id="padding-slider" type="range" min="0" max="160" step="1" value="16">
+                    <span>160</span>
+                </div>
+                <span>Padding: <span id="padding-text"></span></span>
+            </div>
+        </div>
+    </div>
+    <script src="./popup.js" defer async></script>
+</body>
+</html>

@@ -4,10 +4,11 @@
     "version": "1.0.0",
     "description": "Auto-screenshot element with spotlight and dim others areas that you want to spot",
     "action": {
-        "default_title": "Spotlighter"
+        "default_title": "Spotlighter",
+        "default_popup": "popup.html"
     },
     "background": {
         "service_worker": "background.js"
     },
-    "permissions": ["tabs", "activeTab", "scripting", "downloads"]
+    "permissions": ["tabs", "activeTab", "scripting", "downloads", "storage"]
 }
