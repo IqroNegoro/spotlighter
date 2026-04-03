@@ -1,11 +1,19 @@
-.spotlighter-dimmer {
+.spotlighter-overlay {
     width: 100%;
     height: 100%;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 2147483647;
-    background-color: rgba(0,0,0);
     opacity: 0.8;
     pointer-events: none;
+}
+
+.spotlighter-overlay.dimmer-mode {
+    background-color: rgba(0,0,0);
+}
+
+.spotlighter-overlay.blur-mode {
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
 }

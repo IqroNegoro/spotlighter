@@ -6,8 +6,15 @@
 
   const button = document.getElementById("button");
   
-  let { padding, opacity } = await chrome.storage.local.get({ padding: 16, opacity: 80 });
+  let { padding, opacity, blurMode } = await chrome.storage.local.get({ padding: 16, opacity: 80, blurMode: false });
   const [ tab ] = await chrome.tabs.query({ active: true, currentWindow: true });
+
+  const modeToggle = document.getElementById("mode-toggle");
+  modeToggle.checked = blurMode;
+
+  modeToggle.addEventListener("change", () => {
+    chrome.storage.local.set({ blurMode: modeToggle.checked });
+  });
 
   chrome.tabs.sendMessage(tab.id, { type: "status" }, response => {
     button.innerText = response ? "Cancel Spotlight" : "Start Spotlight";
